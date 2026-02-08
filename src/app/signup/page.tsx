@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -46,7 +48,7 @@ const SignupPage = () => {
       <hr />
       <label htmlFor="username">Username</label>
       <input
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-white"
         id="username"
         type="text"
         value={user.username}
@@ -55,7 +57,7 @@ const SignupPage = () => {
       />
       <label htmlFor="email">Email</label>
       <input
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-white"
         id="email"
         type="email"
         value={user.email}
@@ -64,7 +66,7 @@ const SignupPage = () => {
       />
       <label htmlFor="password">Password</label>
       <input
-        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+        className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-white"
         id="password"
         type="password"
         value={user.password}
